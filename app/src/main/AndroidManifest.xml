@@ -27,6 +27,20 @@
         </activity>
 
         <activity android:name=".activity.MainActivity" />
+
+        <activity android:name=".activity.SetUpAct" />
+
+        <activity android:name=".activity.AboutUsAct" />
+
+        <activity android:name=".activity.HistoryAct" />
+
+        <activity android:name=".activity.MyFabulousAct" />
+
+        <activity android:name=".activity.FeedbackAct" />
+
+        <activity android:name=".activity.UserInfoAct" />
+
+        <activity android:name=".activity.VideoDetailsAct" />
     </application>
 
 </manifest>

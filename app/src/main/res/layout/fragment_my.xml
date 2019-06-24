@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_ffffff"
@@ -13,19 +14,69 @@
             android:layout_width="250dp"
             android:layout_height="44dp"
             android:layout_centerInParent="true"
-            android:background="@mipmap/wx_login" />
+            android:background="@mipmap/wx_login"
+            android:visibility="gone" />
+
+
+        <RelativeLayout
+            android:id="@+id/user_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="27dp">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/user_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/icon_logo"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="凯子与狗"
+                    android:textColor="@color/color_333333"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="用户ID 2680144"
+                    android:textColor="@color/color_4a90e2"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@mipmap/icon_you_jiantou" />
+        </RelativeLayout>
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:paddingLeft="21dp"
-        android:paddingRight="27dp">
+        android:paddingLeft="21dp">
 
         <TextView
+            android:id="@+id/viewing_history"
             android:layout_width="match_parent"
             android:layout_height="55dp"
+            android:layout_marginRight="27dp"
             android:drawableLeft="@mipmap/icon_guankan_lishi"
             android:drawablePadding="10dp"
             android:drawableRight="@mipmap/icon_you_jiantou"
@@ -36,11 +87,13 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:background="@color/color_f0f0f0" />
 
         <TextView
+            android:id="@+id/fabulous"
             android:layout_width="match_parent"
+            android:layout_marginRight="27dp"
             android:layout_height="55dp"
             android:drawableLeft="@mipmap/icon_dianzhan_01"
             android:drawablePadding="10dp"
@@ -52,10 +105,12 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:background="@color/color_f0f0f0" />
 
         <TextView
+            android:layout_marginRight="27dp"
+            android:id="@+id/feedback"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:drawableLeft="@mipmap/icon_yijian_01"
@@ -68,10 +123,12 @@
 
         <View
             android:layout_width="match_parent"
-            android:layout_height="1dp"
+            android:layout_height="0.5dp"
             android:background="@color/color_f0f0f0" />
 
         <TextView
+            android:id="@+id/setup"
+            android:layout_marginRight="27dp"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:drawableLeft="@mipmap/icon_set_01"

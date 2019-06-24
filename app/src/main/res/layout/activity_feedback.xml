@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f7f7f7"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="215dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_ffffff">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:background="@color/color_ffffff"
+            android:gravity="top"
+            android:hint="为了能提供更好的服务和体验，请反馈您的意见…"
+            android:maxLength="140"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_f7f7f7"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="14dp"
+            android:text="0/140"
+            android:textColor="@color/color_c7c7c7"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_ffffff">
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_ffffff"
+        android:gravity="center_vertical"
+        android:hint="请输入您的手机号/微信/邮箱/QQ号"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="@color/color_333333"
+        android:textColorHint="@color/color_c7c7c7"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="@dimen/dp_40"
+        android:background="@drawable/bg_radius_23_ff0043"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/color_ffffff"
+        android:textSize="18sp" />
+</LinearLayout>
+

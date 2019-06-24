@@ -9,11 +9,7 @@
         android:layout_height="200dp"
         android:background="@color/color_333333">
 
-        <SurfaceView
-            android:id="@+id/surfaceview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-        
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,41 +29,74 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:id="@+id/video_details"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
             android:text="16.6万次观看"
             android:textColor="@color/color_898989"
             android:textSize="13sp" />
 
-        <TextView
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@mipmap/icon_dianzan_false"
-            android:drawablePadding="5dp"
-            android:gravity="center_vertical"
-            android:text="130"
-            android:textColor="@color/color_898989"
-            android:textSize="13sp" />
+            android:layout_height="match_parent"
+            android:clickable="true">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:background="@mipmap/icon_share_01" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableLeft="@mipmap/icon_dianzan_false"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:text="130"
+                android:textColor="@color/color_898989"
+                android:textSize="13sp" />
+        </RelativeLayout>
 
-        <ImageView
+        <RelativeLayout
+            android:id="@+id/share_btn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:background="@mipmap/icon_dislike_false" />
+            android:layout_height="match_parent"
+            android:clickable="true">
 
-        <ImageView
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@mipmap/icon_share_01" />
+        </RelativeLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="15dp"
-            android:background="@mipmap/icon_sd" />
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:background="@mipmap/icon_dislike_false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/more_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/icon_sd" />
+        </RelativeLayout>
     </LinearLayout>
 </LinearLayout>

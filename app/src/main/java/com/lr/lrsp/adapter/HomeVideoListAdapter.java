@@ -28,20 +28,23 @@ public class HomeVideoListAdapter extends BaseQuickAdapter<HomeVideoBean, BaseVi
 
     @Override
     protected void convert(BaseViewHolder helper, HomeVideoBean item) {
-        SurfaceView surfaceView = helper.getView(R.id.surfaceview);
-       // mVcMediaPlayer.setPreparedListener(this);
-        String videoUrl="http://lirenshipin.oss-cn-hangzhou.aliyuncs.com/1000000494.mp4?Expires=1561267490&OSSAccessKeyId=TMP.AgGVgO7PDNiou2nwbbYGmb-LvoLY2SVx6wGU13_fKiLLfhZmUbC5wldBL63XADAtAhUA_lwxdusrIgFd2Xuft9gOFlcO7SwCFFwA6_q2-IyaPvBKqBm22OVwa8oy&Signature=aWR0Y6DVYTqFhWZdJ2KtVnfdEmw%3D";
-        //mVcMediaPlayer.prepareToPlay(videoUrl);
-        AliyunLocalSource.AliyunLocalSourceBuilder asb = new AliyunLocalSource.AliyunLocalSourceBuilder();
-        asb.setSource(videoUrl);
-        AliyunLocalSource mLocalSource = asb.build();
-        aliyunVodPlayer.prepareAsync(mLocalSource);
-        //开始播放
-        aliyunVodPlayer.start();
+//        SurfaceView surfaceView = helper.getView(R.id.surfaceview);
+//       // mVcMediaPlayer.setPreparedListener(this);
+//        String videoUrl="http://lirenshipin.oss-cn-hangzhou.aliyuncs.com/1000000494.mp4?Expires=1561267490&OSSAccessKeyId=TMP.AgGVgO7PDNiou2nwbbYGmb-LvoLY2SVx6wGU13_fKiLLfhZmUbC5wldBL63XADAtAhUA_lwxdusrIgFd2Xuft9gOFlcO7SwCFFwA6_q2-IyaPvBKqBm22OVwa8oy&Signature=aWR0Y6DVYTqFhWZdJ2KtVnfdEmw%3D";
+//        //mVcMediaPlayer.prepareToPlay(videoUrl);
+//        AliyunLocalSource.AliyunLocalSourceBuilder asb = new AliyunLocalSource.AliyunLocalSourceBuilder();
+//        asb.setSource(videoUrl);
+//        AliyunLocalSource mLocalSource = asb.build();
+//        aliyunVodPlayer.prepareAsync(mLocalSource);
+//        //开始播放
+//        aliyunVodPlayer.start();
+        helper.addOnClickListener(R.id.share_btn);
+        helper.addOnClickListener(R.id.more_btn);
+        helper.addOnClickListener(R.id.video_details);
     }
 
     @Override
     public void onPrepared() {
-     // mVcMediaPlayer.prepareToPlay(videoUrl);
+        // mVcMediaPlayer.prepareToPlay(videoUrl);
     }
 }

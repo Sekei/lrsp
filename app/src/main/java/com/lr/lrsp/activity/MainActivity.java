@@ -1,14 +1,10 @@
 package com.lr.lrsp.activity;
 
-import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -36,7 +32,9 @@ public class MainActivity extends ActionBarActivity {
     TextView homeTextMy;
     @BindView(R.id.image_my)
     ImageView imageMy;
-
+    //判断是第几次点击
+    private int count = 0;
+    private Animation rotate;
 
     @Override
     protected int getLayoutId() {
@@ -45,6 +43,7 @@ public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void initView() {
+        rotate = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
         super.initView();
     }
 
@@ -60,10 +59,13 @@ public class MainActivity extends ActionBarActivity {
                 homeTextHome.setText("刷新");
                 imageHome.setBackgroundResource(R.mipmap.icon_page_home_true);
                 homeTextHome.setTextColor(getResources().getColor(R.color.color_ff0043));
-                Animation rotate = AnimationUtils.loadAnimation(this, R.anim.rotate_anim);
-                imageHome.startAnimation(rotate);
+                if (count != -1) {
+                    imageHome.startAnimation(rotate);
+                }
+                count++;
                 break;
             case R.id.home_radio_my:
+                count = -1;
                 imageHome.clearAnimation();
                 imageHome.setBackgroundResource(R.mipmap.icon_page_home_false);
                 homeTextHome.setText("首页");
