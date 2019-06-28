@@ -94,7 +94,16 @@ public class HomeVideListFragment extends BaseFragment implements BaseQuickAdapt
             case R.id.share_poster:
                 //分享海报
                 PosterDialog dialog = new PosterDialog(getActivity());
+                dialog.setOnViewClick(this);
                 dialog.show();
+                break;
+            case R.id.share_tu_wx:
+                break;
+            case R.id.share_tu_wx_pyq:
+                break;
+            case R.id.share_tu_qq:
+                break;
+            case R.id.share_tu_poster:
                 break;
         }
     }

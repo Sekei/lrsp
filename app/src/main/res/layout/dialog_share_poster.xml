@@ -90,7 +90,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/share_wx"
+                android:id="@+id/share_tu_wx"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -108,7 +108,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/share_wx_pyq"
+                android:id="@+id/share_tu_wx_pyq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -126,7 +126,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/share_qq"
+                android:id="@+id/share_tu_qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
@@ -145,7 +145,7 @@
             android:layout_weight="1">
 
             <TextView
-                android:id="@+id/share_poster"
+                android:id="@+id/share_tu_poster"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"

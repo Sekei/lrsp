@@ -48,18 +48,18 @@ public class PosterDialog extends BaseDialog {
     }
 
 
-//    @OnClick({R.id.share_wx, R.id.share_wx_pyq, R.id.share_qq, R.id.share_copy,R.id.share_poster, R.id.clase})
-//    public void onBindClick(View v) {
-//        switch (v.getId()) {
-//            case R.id.clase:
-//                dismiss();
-//                break;
-//            default:
-//                dismiss();
-//                if (null != mOnViewClick) {
-//                    mOnViewClick.onClick(v);
-//                }
-//                break;
-//        }
-//    }
+    @OnClick({R.id.share_tu_wx, R.id.share_tu_wx_pyq, R.id.share_tu_qq,R.id.share_tu_poster, R.id.clase})
+    public void onBindClick(View v) {
+        switch (v.getId()) {
+            case R.id.clase:
+                dismiss();
+                break;
+            default:
+                dismiss();
+                if (null != mOnViewClick) {
+                    mOnViewClick.onClick(v);
+                }
+                break;
+        }
+    }
 }
